@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://luizmarcelo.com/customers" elementFormDefault="qualified" targetNamespace="http://luizmarcelo.com/customers" version="1.0">
+      
+  
+  <xs:element name="GetAllCustomerResponse">
+            
+    
+    <xs:complexType>
+                  
+      
+      <xs:sequence>
+                        
+        
+        <xs:element name="CustomerDetail" type="tns:CustomerDetail"/>
+                      
+      
+      </xs:sequence>
+                
+    
+    </xs:complexType>
+          
+  
+  </xs:element>
+      
+  
+  <xs:element name="GetCustomerDetailRequest">
+            
+    
+    <xs:complexType>
+                  
+      
+      <xs:sequence>
+                        
+        
+        <xs:element name="id" type="xs:integer"/>
+                      
+      
+      </xs:sequence>
+                
+    
+    </xs:complexType>
+          
+  
+  </xs:element>
+      
+  
+  <xs:element name="GetCustomerDetailResponse">
+            
+    
+    <xs:complexType>
+                  
+      
+      <xs:sequence>
+                        
+        
+        <xs:element name="CustomerDetail" type="tns:CustomerDetail"/>
+                      
+      
+      </xs:sequence>
+                
+    
+    </xs:complexType>
+          
+  
+  </xs:element>
+      
+  
+  <xs:complexType name="CustomerDetail">
+        
+    <xs:annotation>
+            
+      <xs:documentation><![CDATA[<p>Java class for CustomerDetail complex type.
+<p>The following schema fragment specifies the expected content contained within this class.
+<pre>
+&lt;complexType name="CustomerDetail"&gt;
+  &lt;complexContent&gt;
+    &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+      &lt;sequence&gt;
+        &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}integer"/&gt;
+        &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+        &lt;element name="phone" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+        &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+      &lt;/sequence&gt;
+    &lt;/restriction&gt;
+  &lt;/complexContent&gt;
+&lt;/complexType&gt;
+</pre>]]></xs:documentation>
+          
+    </xs:annotation>
+            
+    
+    <xs:sequence>
+                  
+      
+      <xs:element name="id" type="xs:integer"/>
+                  
+      
+      <xs:element name="name" type="xs:string"/>
+                  
+      
+      <xs:element name="phone" type="xs:string"/>
+                  
+      
+      <xs:element name="email" type="xs:string"/>
+                
+    
+    </xs:sequence>
+          
+  
+  </xs:complexType>
+    
+
+</xs:schema>

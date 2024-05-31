@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GetCustomerDetailResponse
+        xmlns="http://luizmarcelo.com/customers"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://luizmarcelo.com/customers customer-information.xsd">
+    <CustomerDetail>
+        <id>123</id>
+        <name>Bob</name>
+        <phone>999999999</phone>
+        <email>asdokasd@hotmail.com</email>
+    </CustomerDetail>
+</GetCustomerDetailResponse>
